@@ -1,2 +1,2 @@
--- list all tables
-SELECT * if exists FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema';
+-- list all tables in a database
+SELECT * FROM information_schema.tables WHERE table_schema = 'public';
